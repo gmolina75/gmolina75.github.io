@@ -1363,13 +1363,17 @@ body::before{
   var emptyEl = document.getElementById('empty');
   var activeCat = 'todos';
 
+  /* Normaliza: "power bi" debe encontrar "PowerBI", "sql server" -> "sqlserver" */
+  function norm(s){ return (s || '').toLowerCase().replace(/[^a-z0-9]+/g, ''); }
+  var normName = cards.map(function(c){ return norm(c.getAttribute('data-name')); });
+  var normText = cards.map(function(c){ return norm(c.textContent); });
+
   function apply(){
-    var q = (search.value || '').trim().toLowerCase();
+    var q = norm(search.value);
     var shown = 0;
-    cards.forEach(function(card){
+    cards.forEach(function(card, i){
       var okCat = activeCat === 'todos' || card.getAttribute('data-cat') === activeCat;
-      var okQ = !q || (card.getAttribute('data-name') || '').indexOf(q) > -1 ||
-                card.textContent.toLowerCase().indexOf(q) > -1;
+      var okQ = !q || normName[i].indexOf(q) > -1 || normText[i].indexOf(q) > -1;
       var visible = okCat && okQ;
       card.classList.toggle('is-hidden', !visible);
       if (visible) shown++;
