@@ -5,7 +5,7 @@
 **Desarrollador de software y profesor de negocios digitales**
 Ecuador · `aurorasi SA` · en GitHub desde 2010
 
-[🌐 **Portafolio**](https://gmolina75.github.io) · [✉️ gmolina75@gmail.com](mailto:gmolina75@gmail.com) · [🔗 github.com/gmolina75](https://github.com/gmolina75)
+[🌐 **Portafolio**](https://portafolio.giancarlomolina.com) · [✉️ gmolina75@gmail.com](mailto:gmolina75@gmail.com) · [🔗 github.com/gmolina75](https://github.com/gmolina75)
 
 </div>
 
@@ -35,7 +35,7 @@ stack: nada de ejercicios de tutorial.
 ## Todos los proyectos
 
 Los **31 repositorios** están catalogados y filtrables en el
-[portafolio](https://gmolina75.github.io) — por área (Datos & ML, Seguridad, Librerías, Aplicaciones,
+[portafolio](https://portafolio.giancarlomolina.com) — por área (Datos & ML, Seguridad, Librerías, Aplicaciones,
 Herramientas, IA & agentes, Automatización, Educación) y con buscador por nombre.
 26 de los 31 tienen README con instalación, uso y límites.
 
